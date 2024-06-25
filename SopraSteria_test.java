@@ -1,13 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package soprasteria_test;
 
 /**
  *
- * @author yaxfe
+ * @author Javier Fernandez
  */
 public class SopraSteria_test {
     
@@ -20,9 +15,6 @@ public class SopraSteria_test {
         }
     System.out.println(num);
     }
-    /**
-     * @param args the command line arguments
-     */
     
     public static void stats_personas(int[][] personas){
         int menores = 0;
@@ -86,7 +78,6 @@ public class SopraSteria_test {
     
     
     public static void main(String[] args) {
-        // TODO code application logic here
         
         
         int numero = LEER_NUMERO(2);
@@ -98,14 +89,15 @@ public class SopraSteria_test {
         
         //Primer elemento edad, segundo sexo.
         //El sexo se representa con 0 en hombre; 1 en mujer.
-        int[][] personasex = new int[][]{{25, 0}, {34, 1}, {18, 0}, {22, 1}, {45, 0}, {30, 1}, {17, 0}, {19, 1}, {20, 0}, {33, 1},
+        //Ejemplo de test
+        int[][] personasej = new int[][]{{25, 0}, {34, 1}, {18, 0}, {22, 1}, {45, 0}, {30, 1}, {17, 0}, {19, 1}, {20, 0}, {33, 1},
                 {40, 0}, {21, 1}, {60, 0}, {29, 1}, {15, 0}, {50, 1}, {16, 0}, {28, 1}, {23, 0}, {27, 1},
                 {19, 0}, {32, 1}, {44, 0}, {25, 1}, {38, 0}, {31, 1}, {20, 0}, {18, 1}, {21, 0}, {35, 1},
                 {36, 0}, {24, 1}, {43, 0}, {26, 1}, {22, 0}, {37, 1}, {48, 0}, {34, 1}, {25, 0}, {29, 1},
                 {17, 0}, {33, 1}, {39, 0}, {31, 1}, {18, 0}, {27, 1}, {45, 0}, {23, 1}, {50, 0}, {19, 1}
                 };
         
-        personas = LEER_PERSONAS(personasex);
+        personas = LEER_PERSONAS(personasej);
         stats_personas(personas);
         
         int HORASTRABAJADAS = LEER_HORASTRABAJADAS(50);
